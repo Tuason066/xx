@@ -2,7 +2,7 @@ const WebSocket = require('ws');
 const chokidar = require('chokidar');
 const path = require('path');
 
-const wss = new WebSocket.Server({ port: 8080 });
+const wss = new WebSocket.Server({ port: process.env.PORT || 8080 });
 
 wss.on('connection', (ws) => {
   console.log('Client connected');
