@@ -1,17 +1,18 @@
 {
-  "name": "backend",
+  "name": "frontend",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "sass --watch src/style.scss css/style.css"
   },
-  "keywords": [],
   "author": "Jeffrey D. Tuason",
   "license": "ISC",
   "dependencies": {
-    "chokidar": "^3.6.0",
-    "ws": "^8.18.0"
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {
+    "sass": "^1.77.8"
   }
 }
